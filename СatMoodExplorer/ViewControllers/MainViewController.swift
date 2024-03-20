@@ -13,6 +13,7 @@ final class MainViewController: UIViewController {
     @IBOutlet var catImage: UIImageView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+    
     // MARK: - Private Properties
     private let networkManager = NetworkManager.shared
     
@@ -20,6 +21,11 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
+        fetchImage()
+    }
+    
+    
+    @IBAction func changePhotoAction(_ sender: Any) {
         fetchImage()
     }
     //MARK: - Private Methods
