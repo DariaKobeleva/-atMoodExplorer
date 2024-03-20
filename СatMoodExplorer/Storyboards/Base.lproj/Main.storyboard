@@ -16,26 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIL-l4-BJr">
-                                <rect key="frame" x="24" y="223.66666666666663" width="345" height="345"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="wIL-l4-BJr" secondAttribute="height" multiplier="1:1" id="VsV-CS-yJc"/>
-                                </constraints>
-                            </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wl9-sB-OqM">
-                                <rect key="frame" x="178" y="377.66666666666669" width="37" height="37"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wl9-sB-OqM">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIL-l4-BJr">
+                                <rect key="frame" x="24" y="238.66666666666663" width="345" height="375"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wIL-l4-BJr" secondAttribute="trailing" constant="24" id="1gW-5O-7pD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wIL-l4-BJr" secondAttribute="bottom" multiplier="4:3" id="BXQ-tK-ADC"/>
-                            <constraint firstItem="wl9-sB-OqM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FRJ-Dn-9Z0"/>
-                            <constraint firstItem="wIL-l4-BJr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iph-I0-dZs"/>
-                            <constraint firstItem="wIL-l4-BJr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ItM-eX-k4a"/>
-                            <constraint firstItem="wIL-l4-BJr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uuq-6e-Nlm"/>
-                            <constraint firstItem="wl9-sB-OqM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w0x-xL-Chc"/>
+                            <constraint firstItem="wIL-l4-BJr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2YA-gU-63F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wIL-l4-BJr" secondAttribute="trailing" constant="24" id="He5-xl-HhC"/>
+                            <constraint firstItem="wIL-l4-BJr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U3Z-j5-QiN"/>
+                            <constraint firstItem="wIL-l4-BJr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="gpo-xd-M7Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wIL-l4-BJr" secondAttribute="bottom" multiplier="4:3" id="hzZ-Ln-L0t"/>
                         </constraints>
                     </view>
                     <connections>
