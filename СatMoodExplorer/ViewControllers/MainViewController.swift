@@ -17,6 +17,7 @@ final class MainViewController: UIViewController {
     // MARK: - Private Properties
     private let networkManager = NetworkManager.shared
     
+    //MARK: - Lice Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator.startAnimating()
@@ -24,10 +25,11 @@ final class MainViewController: UIViewController {
         fetchImage()
     }
     
-    
+    //MARK: IB Actions
     @IBAction func changePhotoAction(_ sender: Any) {
         fetchImage()
     }
+    
     //MARK: - Private Methods
     private func fetchImage() {
         networkManager.fetchImage(from: Link.image.url) { [unowned self] result in
