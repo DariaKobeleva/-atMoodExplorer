@@ -22,9 +22,8 @@
                                     <constraint firstAttribute="width" secondItem="wIL-l4-BJr" secondAttribute="height" multiplier="1:1" id="VsV-CS-yJc"/>
                                 </constraints>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wl9-sB-OqM">
-                                <rect key="frame" x="186" y="386" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wl9-sB-OqM">
+                                <rect key="frame" x="178" y="377.66666666666669" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -32,12 +31,15 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wIL-l4-BJr" secondAttribute="trailing" constant="24" id="1gW-5O-7pD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wIL-l4-BJr" secondAttribute="bottom" multiplier="4:3" id="BXQ-tK-ADC"/>
+                            <constraint firstItem="wl9-sB-OqM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FRJ-Dn-9Z0"/>
                             <constraint firstItem="wIL-l4-BJr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iph-I0-dZs"/>
                             <constraint firstItem="wIL-l4-BJr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ItM-eX-k4a"/>
                             <constraint firstItem="wIL-l4-BJr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uuq-6e-Nlm"/>
+                            <constraint firstItem="wl9-sB-OqM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w0x-xL-Chc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="wl9-sB-OqM" id="Ku5-C0-0kh"/>
                         <outlet property="catImage" destination="wIL-l4-BJr" id="hbw-jl-dvU"/>
                     </connections>
                 </viewController>
